@@ -62,6 +62,24 @@ maskProgressView.pause(); // pause animation
 maskProgressView.stop(); //stop animation clears current progress
 ```
 
+# Import
+Project build.gradle
+
+```
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+```
+
+Module build.gradle
+```
+dependencies {
+  compile 'com.github.iammert:MaskProgressView:0988c5db24'
+}
+```
+
 # Design Owner
 
 This design is originally shared by [Dawid Dapszus](https://twitter.com/@Dapszus) on [Dribbble](https://dribbble.com/shots/2159130-CrowdPlayer-Android-app) and [MaterialUp](https://www.materialup.com/posts/crowdplayer-sketch-freebie).
