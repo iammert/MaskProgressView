@@ -2,7 +2,7 @@
 Yet another android custom progress view for your music player
 
 # Demo
-<img src=""/>
+<img src="https://raw.githubusercontent.com/iammert/MaskProgressView/master/art/art.png"/>
 
 [Youtube Video Link](https://www.youtube.com/watch?v=9ysT9VmaNXU)
 
