@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#221725">
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#36223b">
+
+        <ImageView
+            android:id="@+id/imageviewHeader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_header"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageviewHeader"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/textSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Linkin Park - Bleed It Out"/>
+
+            <TextView
+                android:id="@+id/textPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSinger"
+                android:layout_marginTop="2dp"
+                android:textColor="#80FFFFFF"
+                android:text="submitted by Bruce Diaz"/>
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_menu"/>
+
+    </RelativeLayout>
+
+    <co.mobiwise.library.MaskProgressView
+        android:id="@+id/maskProgressView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutHeader"
+        app:progressEmptyColor="#4e3c51"
+        app:progressLoadedColor="#e91e64"
+        app:coverMaskColor="#80000000"
+        app:durationTextColor="#FFFFFF"
+        app:durationTextSize="15sp"
+        app:coverImage="@drawable/cover"
+        app:progressHeight="4dp"
+        app:maxProgress="40"
+        app:currentProgress="23"
+        app:placeHolder="@drawable/cover"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/layoutHeader"
+        android:background="@drawable/shadow"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maskProgressView"
+        android:layout_centerVertical="true">
+
+
+        <Button
+            android:id="@+id/buttonControl"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/icon_play"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_next"
+            android:layout_toRightOf="@+id/buttonControl"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"/>
+
+
+        <Button
+            android:id="@+id/buttonPrevious"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_previous"
+            android:layout_toLeftOf="@+id/buttonControl"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaskProgressView">
+        <attr name="progressEmptyColor" format="color"/>
+        <attr name="progressLoadedColor" format="color"/>
+        <attr name="coverMaskColor" format="color"/>
+        <attr name="durationTextColor" format="color"/>
+        <attr name="coverImage" format="integer"/>
+        <attr name="placeHolder" format="integer"/>
+        <attr name="progressHeight" format="dimension"/>
+        <attr name="currentProgress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="durationTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>
