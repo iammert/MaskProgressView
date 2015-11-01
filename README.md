@@ -76,7 +76,7 @@ repositories {
 Module build.gradle
 ```
 dependencies {
-  compile 'com.github.iammert:MaskProgressView:0988c5db24'
+  compile 'com.github.iammert:MaskProgressView:1.0'
 }
 ```
 
