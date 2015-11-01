@@ -533,7 +533,8 @@ public class MaskProgressView extends View {
 
     public void setCoverImage(Bitmap mBitmapCoverImage){
         this.mBitmapCoverImage = mBitmapCoverImage;
-        scaleCoverBitmap(mBitmapCoverImage);
+        if(mWidth > 0)
+            scaleCoverBitmap(mBitmapCoverImage);
     }
 
     public void setCoverImage(int coverDrawable){
